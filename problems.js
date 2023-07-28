@@ -78,4 +78,37 @@ else {
     console.log(b, "is not divisible")
 }
 
-  
+
+// Problem 6 Write a js program to check whether a number is even or odd.?
+
+function evenorodd(anynum){
+    if(anynum % 2 ===0){
+        return true
+    }
+    else{
+        return false
+    }
+}
+  const evod=2;
+  if(evenorodd(evod)){
+    console.log(evod, "is an even number")
+  }
+  else{
+    console.log(evod, "is an odd number")
+  }
+
+
+  // Problem 7 Write a js program to check whether character is an alphabet or not?
+
+  function checkalphabet(character){
+    const uppercase= character.toUpperCase();
+    return uppercase >= "A" && uppercase <= "Z";
+  }
+
+  const alph = "2";
+  if (checkalphabet(alph)){
+    console.log("'", alph , "' is an alphabet")
+  }
+  else{
+    console.log("'", alph , "' is not an alphabet")
+  }
