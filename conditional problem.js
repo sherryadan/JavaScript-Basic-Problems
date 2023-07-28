@@ -88,3 +88,29 @@ function checkalphabet(character) {
 const alphtocheck= "V";
 const check = checkalphabet(alphtocheck);
 console.log("This",  alphtocheck,  check)
+
+// Problem 4. Write a js program to find maximum between two numbers using switch case.
+
+function findmax(value1, value2){
+    let max;
+    switch (true){
+        case value1>value2:
+            max = value1;
+            break;
+            
+            case value2 >value1:
+                max= value2;
+                break;
+
+        default:
+            max = "Both values are equal"
+
+    }
+    return max;
+}
+
+const numbe1 = 10;
+const numbe2 = 9;
+
+const greaternum = findmax(numbe1, numbe2);
+console.log(greaternum,  "is greater ")
