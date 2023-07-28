@@ -78,29 +78,29 @@ function checkalphabet(character) {
         case "U":
             return "is Vowel"
 
-       default:
-        return "is consonant"
+        default:
+            return "is consonant"
 
 
     }
 }
 
-const alphtocheck= "V";
+const alphtocheck = "V";
 const check = checkalphabet(alphtocheck);
-console.log("This",  alphtocheck,  check)
+console.log("This", alphtocheck, check)
 
 // Problem 4. Write a js program to find maximum between two numbers using switch case.
 
-function findmax(value1, value2){
+function findmax(value1, value2) {
     let max;
-    switch (true){
-        case value1>value2:
+    switch (true) {
+        case value1 > value2:
             max = value1;
             break;
-            
-            case value2 >value1:
-                max= value2;
-                break;
+
+        case value2 > value1:
+            max = value2;
+            break;
 
         default:
             max = "Both values are equal"
@@ -113,4 +113,21 @@ const numbe1 = 10;
 const numbe2 = 9;
 
 const greaternum = findmax(numbe1, numbe2);
-console.log(greaternum,  "is greater ")
+console.log(greaternum, "is greater ")
+
+// Problem 5. Write a js program to check whether a number is even or odd using switch case.
+
+function checknum(val) {
+    switch (val % 2) {
+        case 0:
+            return "Even"
+
+        default:
+            return "Odd"
+
+    }
+}
+
+const oddoreven= 11;
+const checknumbers = checknum(oddoreven);
+console.log(oddoreven, "is an", checknumbers , "number")
