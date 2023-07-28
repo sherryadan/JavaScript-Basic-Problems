@@ -57,3 +57,25 @@ function checknumber(numberr){
 
 const aa= -10;
 console.log(checknumber(aa));
+
+// Problem 5 Write a js program to check whether a number is divisible by both 5 and 11 or not.?
+
+function divnumber(numm){
+    if (numm % 5 === 0 && numm % 11 === 0){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+const b= 110;
+
+if (divnumber(b)){
+    console.log(b , "is divisible")
+}
+else {
+    console.log(b, "is not divisible")
+}
+
+  
