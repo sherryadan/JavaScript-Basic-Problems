@@ -1,4 +1,4 @@
-//Problem 08 1. Write a js program to print day of week name using switch case.?
+//Problem 1. Write a js program to print day of week name using switch case.?
 
 const day = "Tuesday"
 
@@ -33,7 +33,7 @@ switch (day) {
 }
 
 
-// Problem 9 Write a js program print total number of days in a month using switch case.?
+// Problem 2 Write a js program print total number of days in a month using switch case.?
 
 function checkdaysinmonth(month) {
 
@@ -63,3 +63,28 @@ const monthtocheck = "Feb";
 const totaldays = checkdaysinmonth(monthtocheck);
 
 console.log("Total days in ", monthtocheck, "are", totaldays)
+
+
+// Problem 3 Write a js program to check whether an alphabet is vowel or consonant using switch case.
+
+
+function checkalphabet(character) {
+    const uppercase = character.toUpperCase();
+    switch (uppercase) {
+        case "A":
+        case "E":
+        case "I":
+        case "O":
+        case "U":
+            return "is Vowel"
+
+       default:
+        return "is consonant"
+
+
+    }
+}
+
+const alphtocheck= "V";
+const check = checkalphabet(alphtocheck);
+console.log("This",  alphtocheck,  check)
