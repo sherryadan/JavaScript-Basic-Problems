@@ -154,6 +154,39 @@ console.log(valueofsnum, "is a", checkstate, "number")
 
 // 7. Write a js program to find roots of a quadratic equation using switch case.
 
+function findroota(a, b, c) {
+    let discriminant = b ^ 2 - 4 * a * c
+    let roottype;
+    switch (true) {
+
+        case discriminant > 0:
+            roottype = "Two Real and Distinct"
+            // root 1 and root 2 because it has +- values a in quadratic formula 
+            let root1 = -b + Math.sqrt(discriminant) / 2 * a;
+            let root2 = -b - Math.sqrt(discriminant) / 2 * a;
+
+            return [root1, root2];
+
+
+        case discriminant == 0:
+            roottype = "Two Real and Equal"
+
+            let singleroot = -b / 2 * a; //doesnot contains sq root part because its value is zero
+            return [singleroot];
+
+
+        default:
+            ootType = "Complex Roots";
+            let realPart = -b / (2 * a);  //the real part of quadratic formula
+            let imaginaryPart = Math.sqrt(-discriminant) / (2 * a); // the aiota part of quadratic formula 
+            let root1Complex = realPart + " + " + imaginaryPart + "i";
+            let root2Complex = realPart + " - " + imaginaryPart + "i";
+            return [root1Complex, root2Complex];
+
+    }
+}
+
+
 // 8. Write a js program to create Simple Calculator using switch case.
 
 // 9. Write a js program to input any character and check whether it is alphabet, digit or special character.
