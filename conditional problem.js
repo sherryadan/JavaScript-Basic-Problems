@@ -131,3 +131,35 @@ function checknum(val) {
 const oddoreven= 11;
 const checknumbers = checknum(oddoreven);
 console.log(oddoreven, "is an", checknumbers , "number")
+
+
+
+// 6. Write a js program to check whether a number is positive, negative or zero using switch case.
+
+function stateofnumber(snum){
+    switch(snum){
+        case snum > 0:
+            return "Positive"
+            
+            case snum < 0:
+            return "Negative"
+
+            case snum = 0:
+                return "Zero"
+    }
+}
+ const valueofsnum = -10;
+ const checkstate = stateofnumber(valueofsnum);
+ console.log(valueofsnum, "is a", checkstate, "number")
+
+// 7. Write a js program to find roots of a quadratic equation using switch case.
+
+// 8. Write a js program to create Simple Calculator using switch case.
+
+// 9. Write a js program to input any character and check whether it is alphabet, digit or special character.
+
+// 10. Write a js program to check whether a character is uppercase or lowercase alphabet.
+
+// 11. Write a js program to input week number and print week day.
+
+// 12. Write a js program to input month number and print number of days in that month.
