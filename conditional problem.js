@@ -137,7 +137,7 @@ console.log(oddoreven, "is an", checknumbers, "number")
 // 6. Write a js program to check whether a number is positive, negative or zero using switch case.
 
 function stateofnumber(snum) {
-    switch (snum) {
+    switch (true) {
         case snum > 0:
             return "Positive"
 
