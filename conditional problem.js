@@ -189,6 +189,35 @@ function findroota(a, b, c) {
 
 // 8. Write a js program to create Simple Calculator using switch case.
 
+function simpleCalculator(operator, num1, num2) {
+    let result;
+    switch (operator) {
+        case '+':
+            result = num1 + num2;
+            break;
+        case '-':
+            result = num1 - num2;
+            break;
+        case '*':
+            result = num1 * num2;
+            break;
+        case '/':
+
+        if(!num2 == 0){
+            result = num1 + num2;
+        }
+        else{
+            "Error"
+        }
+            break;
+        default:
+            "Invalid Operator"
+    }
+    return result
+}
+
+console.log(simpleCalculator('+',2,3))
+
 // 9. Write a js program to input any character and check whether it is alphabet, digit or special character.
 
 // 10. Write a js program to check whether a character is uppercase or lowercase alphabet.
