@@ -128,29 +128,29 @@ function checknum(val) {
     }
 }
 
-const oddoreven= 11;
+const oddoreven = 11;
 const checknumbers = checknum(oddoreven);
-console.log(oddoreven, "is an", checknumbers , "number")
+console.log(oddoreven, "is an", checknumbers, "number")
 
 
 
 // 6. Write a js program to check whether a number is positive, negative or zero using switch case.
 
-function stateofnumber(snum){
-    switch(snum){
+function stateofnumber(snum) {
+    switch (snum) {
         case snum > 0:
             return "Positive"
-            
-            case snum < 0:
+
+        case snum < 0:
             return "Negative"
 
-            case snum = 0:
-                return "Zero"
+        default:
+            return "Zero"
     }
 }
- const valueofsnum = -10;
- const checkstate = stateofnumber(valueofsnum);
- console.log(valueofsnum, "is a", checkstate, "number")
+const valueofsnum = -10;
+const checkstate = stateofnumber(valueofsnum);
+console.log(valueofsnum, "is a", checkstate, "number")
 
 // 7. Write a js program to find roots of a quadratic equation using switch case.
 
