@@ -219,6 +219,9 @@ function simpleCalculator(operator, num1, num2) {
 console.log(simpleCalculator('+',2,3))
 
 // 9. Write a js program to input any character and check whether it is alphabet, digit or special character.
+function elementcheck(){
+    
+}
 
 // 10. Write a js program to check whether a character is uppercase or lowercase alphabet.
 
